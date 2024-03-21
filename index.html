@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verizon Motors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Verizon Motors</h1>
+        <form>
+            <fieldset>
+                <legend>Personal Details</legend>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="mobile">
+                </div>
+                <div>
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location">
+                </div>
+                <div>
+                    <label for="id_number">ID Number:</label>
+                    <input type="text" id="id_number" name="id_number">
+                </div>
+                <div>
+                    <label for="license_number">License Number:</label>
+                    <input type="text" id="license_number" name="license_number">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Vehicle Details</legend>
+                <div>
+                    <label for="vehicle_plate">Vehicle Plate:</label>
+                    <input type="text" id="vehicle_plate" name="vehicle_plate">
+                </div>
+                <div>
+                    <label for="date_purchase">Date of Purchase:</label>
+                    <input type="date" id="date_purchase" name="date_purchase">
+                </div>
+                <div>
+                    <label for="log_book_details">Log Book Details:</label>
+                    <input type="text" id="log_book_details" name="log_book_details">
+                </div>
+                <div>
+                    <label for="vehicle_mileage">Vehicle Mileage:</label>
+                    <input type="number" id="vehicle_mileage" name="vehicle_mileage">
+                </div>
+                <div>
+                    <label for="payment_method">Method of Payment:</label>
+                    <select id="payment_method" name="payment_method">
+                        <option value="blank"></option>
+                        <option value="full_payment">Full Payment</option>
+                        <option value="hire_purchase">Hire Purchase</option>
+                    </select>
+                </div>
+                <div id="hire_purchase_months" style="display: none;">
+                    <label for="months">Number of Months for Hire Purchase:</label>
+                    <input type="number" id="months" name="months">
+                </div>
+                <div>
+                    <label for="preferred_payment">Preferred Method of Payment:</label>
+                    <select id="preferred_payment" name="preferred_payment">
+                        <option value="blank"></option>
+                        <option value="m_pesa">M-Pesa</option>
+                        <option value="absa">Absa</option>
+                        <option value="family_bank">Family Bank</option>
+                        <option value="kcb">KCB</option>
+                        <option value="ncba">NCBA</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="insurance_company">Insurance Company:</label>
+                    <input type="text" id="insurance_company" name="insurance_company">
+                </div>
+            </fieldset>
 
+
+        </form>
+        <button type="submit">Submit</button>
+    </div>
+    <footer>
+        <div style="float: left;">Verizon Motor Selling Company epitomizes excellence in automotive retail. Renowned for reliability and customer satisfaction, they offer top-tier vehicles and unmatched service. Their commitment to quality and innovation makes them a trusted choice for discerning buyers, ensuring satisfaction and peace of mind.</div>
+        <div>Dreams are Valid</div>
+        <div style="float: right;">Verizon Motors Making Dreams Come True</div>
+    </footer>
+
+    <script>
+        document.getElementById('payment_method').addEventListener('change', function() {
+            var monthsInput = document.getElementById('hire_purchase_months');
+            if (this.value === 'hire_purchase') {
+                monthsInput.style.display = 'block';
+            } else {
+                monthsInput.style.display = 'none';
+            }
+        });
+    </script>
+
+     <div class="video-container">
+        <div class="video-wrapper">
+        <video controls>
+            <source src="video/Your paragraph text (1).mp4" type="video/mp4">
+            <p>our companies ad</p>
+            Your browser does not support the video tag.
+        </video>
+        </div>
+
+        <div class="video-wrapper">
+        <video controls>
+            <source src="video/Your paragraph text (1).mp4" type="video/mp4">
+            <p>our companies ad</p>
+            Your browser does not support the video tag.
+        </video>
+        </div>
+     </div>
+
+     <div class="image-container">
+        <div class="image-wrapper">
+        <img src="images/GENERATE FOR ME ab62ce83-be68-4634-b981-a6ac995a9cf9.png" alt="company logo">
+         </div>
+     
+     <div class="image-wrapper">
+        <img src="images/GENERATE FOR ME ab62ce83-be68-4634-b981-a6ac995a9cf9.png" alt="company logo">
+        </div>
+        
+            <div class="flex-container">
+            <button onclick="openImagesPage()">view online showroom</button>
+        
+            <script>
+                function openImagesPage() {
+                    window.open('images.html', '_blank');
+                }
+            </script>
+            </div
+        
+</body>
+</html>
