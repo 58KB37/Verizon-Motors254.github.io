@@ -1,0 +1,128 @@
+ body {
+    font-family: 'sans-serif';
+    background-image:
+     url(images/wp2138259-dodge-challenger-hd-wallpapers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #2980b9; /* Blue header color */
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #3498db; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: inline;
+    align-items: center;
+  }
+  
+  fieldset {
+    margin-bottom: 20px;
+    border: 9px;
+  }
+  
+  legend {
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input {
+    padding: 8px;
+    margin-bottom: 12px;
+    height: auto;
+    width: auto;
+  }
+  
+  button {
+    background-color: #2980b9;
+    color: white;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  footer {
+    color: black;
+    position: center;
+    bottom: 0;
+    width: 97%;
+    text-align: center;
+    padding: 40px;
+}
+body, html {
+    margin: 0;
+    padding: 10;
+    height: 0;
+}
+.video-container {
+    display: flex;
+    position: centre;
+    top: 120%;
+    bottom: 0;
+    right: 7%;
+    width: 10cm; 
+    height: 7cm; 
+    gap: 590px;
+}
+video {
+    width: 10cm;
+    height: 7cm;
+    object-fit: cover; 
+
+
+}
+
+.image-container {
+  display: flex;
+  position: absolute;
+  top: 5%;
+  bottom: 3%;
+  left: 0%;
+  padding: 50px;
+  gap:750px;
+}
+img {
+  height: 5cm;
+  width: 7cm;
+}
+
+.flex-container {
+  display: flex;
+  position: absolute;
+  top: 5%;
+  bottom: 100%;
+  left: 0%;
+  padding: 550px;
+  margin: 8px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+  
+  
+  
